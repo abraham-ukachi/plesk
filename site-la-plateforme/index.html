@@ -128,7 +128,7 @@
           if (progressCount == 60) {
             // First check for browser support
             // if the browser supports it...
-            if (typeof(Storage) == 'undefined') {
+            if (typeof(Storage) !== 'undefined') {
               // ...get the theme from local storage as `theme`
               let theme = localStorage.getItem('theme');
               // DEBUG [4dbsmaster]: tell me about it :)
@@ -196,7 +196,7 @@
         <div id="toolBar" fixed>
           
           <!-- Logo Wrapper -->
-          <a class="logo-wrapper horizontal centered" href="index.html">
+          <a class="logo-wrapper horizontal centered" href=".#">
             <!-- Logo Icon -->
             <img class="logo-icon" src="assets/logos/logo.svg">
             <!-- Logo Name -->
@@ -247,7 +247,7 @@
             <!-- Plateforme Start | LINK  -->
             <a href="plateforme-start.html">
               <li>
-                <span>La Plateforome/Start</span>
+                <span>La Plateforme/Start</span>
                 <span class="indicator"></span>
               </li>
             </a>
@@ -466,7 +466,7 @@
             <div class="box vertical">
 
               <!-- Logo Wrapper -->
-              <a class="logo-wrapper horizontal centered" href="#">
+              <a class="logo-wrapper horizontal centered" href=".#">
                 <!-- Logo Icon -->
                 <img class="logo-icon" src="assets/logos/logo.svg">
                 <!-- Logo Name -->
@@ -539,10 +539,10 @@
 
               <!-- Vertical List -->
               <ul class="list vertical">
-                <!-- Acceuil -->
+                <!-- Accueil -->
                 <li>
-                  <a href="/" target="_blank">
-                    <span>Acceuil</span>
+                  <a href=".#" target="_blank">
+                    <span>Accueil</span>
                   </a>
                 </li>
 
@@ -554,35 +554,35 @@
                 </li>
                 
                 <li>
-                  <a href="/https://laplateforme.io/laplateforme_brochure.pdf" target="_blank">
+                  <a href="https://laplateforme.io/laplateforme_brochure.pdf" target="_blank">
                     <span>Notre brochure</span>
                   </a>
                 </li>
                 
                 <!-- Ils parlent de nous -->
                 <li>
-                  <a href="/https://laplateforme.io/lls-parlent-de-nous/" target="_blank">
+                  <a href="https://laplateforme.io/lls-parlent-de-nous/" target="_blank">
                     <span>Ils parlent de nous</span>
                   </a>
                 </li>
 
                 <!-- Annuaire des Plateformeurs -->
                 <li>
-                  <a href="/https://students-laplateforme.io/" target="_blank">
+                  <a href="https://students-laplateforme.io/" target="_blank">
                     <span>Annuaire des Plateformeurs</span>
                   </a>
                 </li>
                 
                 <!-- Alumni des Plateformeurs -->
                 <li>
-                  <a href="/https://alumni.laplateforme.io/" target="_blank">
+                  <a href="https://alumni.laplateforme.io/" target="_blank">
                     <span>Alumni des Plateformeurs</span>
                   </a>
                 </li>
 
                 <!-- Taxe d'apprentissage -->
                 <li>
-                  <a href="/https://laplateforme.io/entreprise/taxe-apprentissage/" target="_blank">
+                  <a href="https://laplateforme.io/entreprise/taxe-apprentissage/" target="_blank">
                     <span>Taxe d'apprentissage</span>
                   </a>
                 </li>
@@ -817,7 +817,7 @@
             <!-- Plateforme Start | LINK  -->
             <a href="plateforme-start.html">
               <li>
-                <span>La Plateforome/Start</span>
+                <span>La Plateforme/Start</span>
                 <span class="indicator"></span>
               </li>
             </a>
