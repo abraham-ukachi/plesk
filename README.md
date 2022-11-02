@@ -29,7 +29,7 @@ These are a couple of the main requirements for this project:
 The official deadline of the jobs below - according to [intra](https://intra.laplateforme.io) - was **29/10/2022 at 4:09 PM**.
 
 
-| No. | Name | Typ  | Status |
+| No. | Name | Type | Status |
 | --- | ---- | ---- | ------ |
 | 1 | *`index.html`* | *FILE* | [Added](./index.html) |
 | 2 | *`cv-abraham-ukachi.css`* | *FILE* | Pending |
