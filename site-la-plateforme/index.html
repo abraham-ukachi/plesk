@@ -128,14 +128,14 @@
           if (progressCount == 60) {
             // First check for browser support
             // if the browser supports it...
-            if (typeof(Storage) !== 'undefined') {
+            if (typeof(Storage) == 'undefined') {
               // ...get the theme from local storage as `theme`
               let theme = localStorage.getItem('theme');
               // DEBUG [4dbsmaster]: tell me about it :)
               console.log(`[_progressHandler]: theme => ${theme}`);
              
               // if a theme was found in storage...
-              if (typeof(theme) !== 'undefined') {
+              if (typeof(theme) == 'string') {
                 // ...remove all the themes in body
                 document.body.classList.remove('light', 'dark');
                 // update the theme
@@ -196,7 +196,7 @@
         <div id="toolBar" fixed>
           
           <!-- Logo Wrapper -->
-          <a class="logo-wrapper horizontal centered" href="#">
+          <a class="logo-wrapper horizontal centered" href="index.html">
             <!-- Logo Icon -->
             <img class="logo-icon" src="assets/logos/logo.svg">
             <!-- Logo Name -->
