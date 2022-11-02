@@ -29,8 +29,8 @@ These are a couple of the main requirements for this project:
 The official deadline of the jobs below - according to [intra](https://intra.laplateforme.io) - was **29/10/2022 at 4:09 PM**.
 
 
-| No. | Name | Type | Folder | Status |
-| --- | ---- | ---- | ------ | ------ |
+| No. | Name | Typ  | Status |
+| --- | ---- | ---- | ------ |
 | 1 | *`index.html`* | *FILE* | [Added](./index.html) |
 | 2 | *`cv-abraham-ukachi.css`* | *FILE* | Pending |
 | 3 | *`site-la-plateforme`* | *FOLDER* | [Added](./site-la-plateforme) |
@@ -40,5 +40,4 @@ The official deadline of the jobs below - according to [intra](https://intra.lap
 
 ## TODOs
 
-- [ ] Add the *`cv-abraham-ukachi.css`* file to [this Github repository](https://github.com/abraham-ukachi/plesk).
-
+- [ ] Add the *`cv-abraham-ukachi.css`* file to [this Github repository](https://github.com/abraham-ukachi/plesk)
