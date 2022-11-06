@@ -32,11 +32,11 @@ The official deadline of the jobs below - according to [intra](https://intra.lap
 | No. | Name | Type | Status |
 | --- | ---- | ---- | ------ |
 | 1 | *`index.html`* | *FILE* | [Added](./index.html) |
-| 2 | *`cv-abraham-ukachi.css`* | *FILE* | Pending |
+| 2 | *`cv-abraham-ukachi.css`* | *FILE* | [Added](./cv-abraham-ukachi.css) |
 | 3 | *`site-la-plateforme`* | *FOLDER* | [Added](./site-la-plateforme) |
 
 
-> NOTE: This contains project files from previous github repos.
+> NOTE: This contains project files from a [previous github repo](https://github.com/cv-html-css).
 
 ## TODOs
 

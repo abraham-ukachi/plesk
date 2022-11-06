@@ -33,7 +33,48 @@
 
     <!-- Title -->
     <title>abCV</title>
-    
+   
+    <!-- Fonts, Fonts, Fonts !!! -->
+    <!-- NOTE: I really don't like doing it this way but I run outta time , soo....:( -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Mulish Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Roboto Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- Material Icons - https://github.com/google/material-design-icons/tree/master/font -->
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Base -->
+    <base href="/">
+
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#A67C52">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="abCV">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="abCV">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="assets/images/manifest/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/manifest/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="assets/images/manifest/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/manifest/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/images/manifest/icon-192x192.png">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="cv-abraham-ukachi.css">
     
@@ -43,7 +84,7 @@
   </head>
   
   <!-- Body -->
-  <body class="theme classic">
+  <body class="theme dark" fullbleed>
     
     <!-- Layout -->
     <div id="layout">
@@ -51,12 +92,45 @@
       <!-- Header -->
       <div id="header">
 
+        <!-- ToolBar -->
+        <div id="toolbar" class="vertical flex-layout centered">
+          <!-- ToolBar Container -->
+          <div class="container horizontal flex-layout center">
+            <!-- Logo -->
+            <svg id="logo" xml:space="preserve" viewBox="0 0 24 24" width="24" height="24">
+              <path d="m1.8 20.5 9.3-17v17zM22.2 7.7l-9.3-4.2v17l9.3-4.2-4.7-4.3z"/>
+              <path d="m12.9 20.5 9.3-4.2-9.3-8.6z" opacity=".1"/>
+            </svg>
+
+            <!-- <span flex></span> -->
+
+            <!-- Icon Buttons -->
+            <div class="icon-buttons horizontal flex-layout">
+              <!-- Theme - Icon Button -->
+              <button id="themeIconButton" class="icon-button horizontal flex-layout centered" naked>
+                <span class="material-icons-round md-light md-24">format_paint</span>
+              </button>
+
+              <!-- More - Icon Button -->
+              <button id="moreIconButton" class="icon-button horizontal flex-layout centered" naked>
+                <span class="material-icons md-light md-24">more_horiz</span>
+                </button>
+
+              </div>
+            <!-- End of Icon Buttons -->
+
+          </div>
+          <!-- End of ToolBar Container -->
+        </div>
+        <!-- End of ToolBar -->
+                
+
         <!-- Header Container -->
         <div class="container">
-          
+
           <!-- Pic-Wrapper -->
           <!-- TODO: Rename `pic` to `avatar` -->
-          <div class="pic-wrapper">
+          <div class="pic-wrapper vertical flex-layout centered">
             <img id="pic" src="assets/pic.png"/>
           </div>
 
@@ -65,72 +139,76 @@
 
             <div main class="info">
               <!-- Fullname -->
-              <h1 id="fullname">Abraham Ukachi</h1>
+              <h1 id="fullname" class="txt-h1">Abraham Ukachi</h1>
               <!-- Job -->
-              <h2 id="job">Étudiant</h2>
+              <span id="job" class="txt-subtitle1">Étudiant</span>
             </div>
 
             <div more class="info">
               <!-- Bio-Wrapper -->
               <div class="bio-wrapper">
-                <!-- Bio Container -->
-                <div class="container">
-                  <!-- Open Quotes -->
-                  <img class="quotes open" src="assets/icons/quote-open-icon.svg" />
-                  <!-- Bio -->
-                  <p id="bio">Mon objectif professionnel c'est d'être un <strong>Développeur Web Senior</strong> et d'utiliser mes competences et ma passion pour faire avancer la mission d'une compagnie inspirante et avant-gardiste.</p>
-                  <!-- Close Quotes -->
-                  <img class="quotes close" src="assets/icons/quote-close-icon.svg" />
+                <!-- Open Quote -->
+                <span class="quote-open material-icons md-24">format_quote</span>
+                <!-- <img class="quotes open" src="assets/icons/quote-open-icon.svg" /> -->
+                <!-- Bio -->
+                <p id="bio">Mon objectif professionnel c'est d'être un <strong>Développeur Web Senior</strong> et d'utiliser mes competences et ma passion pour faire avancer la mission d'une compagnie inspirante et avant-gardiste.</p>
+                <!-- Close Quote -->
+                <span class="quote-close material-icons md-24">format_quote</span>
+                <!-- <img class="quote-close" src="assets/icons/quote-close-icon.svg" /> -->
 
-                </div>
-                <!-- End of Bio Container -->
               </div>
               <!-- End of Bio-Wrapper -->
 
               <!-- Divider-Wrapper -->
-              <span class="divider-Wrapper"><span class="divider"></span></span>
+              <span class="divider-wrapper"><span class="divider"></span></span>
 
               <!-- Contacts-Wrapper -->
               <div class="contacts-wrapper">
                 <!-- Contacts Container -->
                 <ul id="contacts" class="container">
 
-                  <!-- Address  -->
-                  <li id="address" class="contact">
-                    <img class="icon" src="assets/icons/location-icon.svg" />
-                    <label>91 Boulevard Sakakini, 13005, Marseille, France</label>
+                  <!-- Github -->
+                  <li id="github" class="contact horizontal flex-layout">
+                    <!-- <span class="material-icons-round icon">github</span> -->
+                    <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><path github/></svg>
+                    <span class="txt-body2">@abraham-ukachi</span>
+                  </li>
+                  <!-- Address -->
+                  <li id="address" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">place</span>
+                    <span class="txt-body2">91 Boulevard Sakakini, 13005, Marseille, France</span>
                   </li>
 
-                  <!-- Phonenumber  -->
-                  <li id="phonenumber" class="contact">
-                    <img class="icon" src="assets/icons/phone-icon.svg" />
-                    <label>07 58 66 46 73</label>
+                  <!-- Phonenumber -->
+                  <li id="phonenumber" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">phone</span>
+                    <span class="txt-body2">07 58 66 46 73</span>
                   </li>
   
-                  <!-- Email  -->
-                  <li id="email" class="contact">
-                    <img class="icon" src="assets/icons/mail-icon.svg" />
-                    <label>abraham-ukachi@laplateforme.io</label>
+                  <!-- Email -->
+                  <li id="email" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">mail</span>
+                    <span class="txt-body2">abraham-ukachi@laplateforme.io</span>
                   </li>
   
-                  <!-- Date of Birth  -->
-                  <li id="dob" class="contact">
-                    <img class="icon" src="assets/icons/dob-icon.svg" />
-                    <label><strong>Né le</strong> 25 Juillet 1991 en Côte d'ivoire</label>
+                  <!-- Date of Birth -->
+                  <li id="dob" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">cake</span>
+                    <span class="txt-body2"><strong>Né le</strong> 25 Juillet 1991 en Côte d'ivoire</span>
                   </li>
 
   
                   <!-- Nationality  -->
-                  <li id="nationality" class="contact">
-                    <img class="icon" src="assets/icons/flag-icon.svg" />
-                    <label>Nigérian</label>
+                  <li id="nationality" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">flag</span>
+                    <span class="txt-body2">Nigérian</span>
                   </li>
 
   
                   <!-- Marital Status  -->
-                  <li id="maritalStatus" class="contact">
-                    <img class="icon" src="assets/icons/marital-status-icon.svg" />
-                    <label>Célibataire - Sans enfants</label>
+                  <li id="maritalStatus" class="contact horizontal flex-layout">
+                    <span class="material-icons-round icon">group</span>
+                    <span class="txt-body2">Célibataire - Sans enfants</span>
                   </li>
 
                 </ul>
@@ -149,7 +227,7 @@
     
       <!-- Content -->
       <!-- TODO: Try the <main> element here instead -->
-      <div id="content">
+      <div id="content" class="vertical flex-layout">
 
         <!-- [Skills] -->
         <section skills>
@@ -160,7 +238,7 @@
             <div class="skill languages">
 
               <!-- Title  -->
-              <h2 class="title">
+              <h2 id="skills" class="title">
                 <img class="icon" src="assets/icons/language-icon.svg">
                 <span>Langues</span>
               </h2>
@@ -176,11 +254,11 @@
                     <p><strong>Anglais</strong> - <span>bilingue</span></p>
                     <!-- FiveStars -->
                     <p class="five-stars">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
                     </p>
                     <!-- End of Stars -->
                   </li>
@@ -191,11 +269,11 @@
                     <p><strong>Français</strong> - <span>bilingue</span></p>
                     <!-- FiveStars -->
                     <p class="five-stars">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-half-icon.svg">
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star_half</span>
                     </p>
                     <!-- End of Stars -->
                   </li>
@@ -206,11 +284,11 @@
                     <p><strong>Russian</strong> - <span>niveau B1</span></p>
                     <!-- FiveStars -->
                     <p class="five-stars">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-icon.svg">
-                      <img class="star" src="assets/icons/star-half-icon.svg">
-                      <img class="star" src="assets/icons/star-empty-icon.svg">
-                      <img class="star" src="assets/icons/star-empty-icon.svg">
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star</span>
+                      <span class="material-icons star">star_half</span>
+                      <span class="material-icons star">star_outline</span>
+                      <span class="material-icons star">star_outline</span>
                     </p>
                     <!-- End of Stars -->
                   </li>
@@ -241,7 +319,7 @@
               <div class="data-wrapper">
 
                 <!-- Data -->
-                <ul class="data">
+                <ul class="data" naked>
 
                   <!-- GSuite ComputerSkill -->
                   <li class="g-suite computer-skill">
@@ -251,7 +329,7 @@
                   </li>
                   <!-- End of GSuite ComputerSkill -->
                 
-
+                  
                   <!-- Illustrator ComputerSkill -->
                   <li class="illustrator computer-skill">
                     <label for="illustratorProgress">GravitDesigner / Illustrator</label>
@@ -333,15 +411,14 @@
             <!-- Typing Skill -->
             <div class="skill typing">
               <!-- WPM-Wrapper -->
-              <div class="wpm-wrapper">
+              <div class="wpm-wrapper vertical flex-layout centered">
                 
                 <!-- WPM -->
                 <h1 id="wpm">72</h1>
                 <!-- word / min -->
                 <p>mots / min</p>
                 <!-- Keyboard Icon -->
-                <!-- TODO: Move "keyboard-icon.svg" from "assets/icons/" to "assets/" -->
-                <img class="icon" src="assets/icons/keyboard-icon.svg">
+                <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><path keyboard /></svg>
 
               </div>
               <!-- WPM-Wrapper -->
@@ -359,7 +436,7 @@
           <div id="educationContainer" class="container">
             
             <!-- Title  -->
-            <h2 class="title">
+            <h2 id="education" class="title">
               <img class="icon" src="assets/icons/school-icon.svg">
               <span>Éducation</span>
             </h2>
@@ -1021,7 +1098,7 @@
           <div id="workContainer" class="container">
             
             <!-- Title  -->
-            <h2 class="title">
+            <h2 id="experience" class="title">
               <img class="icon" src="assets/icons/school-icon.svg">
               <span>Expérience Professionelle</span>
             </h2>
@@ -1367,7 +1444,7 @@
         <section projects>
           <div class="container">
             <div class="title-wrapper">
-              <h2 class="title">Mes Projets</h2>
+              <h2 id="projects" class="title">Mes Projets</h2>
               <h3><a href="https://abraham-ukachi.students-laplateforme.io">Mon CV sur Plesk</a></h3>
             </div>
             
@@ -1416,7 +1493,7 @@
             <!-- List-Wrapper -->
             <div class="list-wrapper">
               <!-- Hobbies List -->
-              <ul class="hobbies list">
+              <ul class="hobbies list horizontal flex-layout" naked>
                   
                 <!-- Code - Hobby -->
                 <li class="hobby code">
@@ -1558,10 +1635,48 @@
       <!-- Footer -->
       <footer id="footer"><p>Copyright &copy; 2022</p></footer>
       <!-- End of Footer -->
-
+ 
     </div>
-    <!-- End of Layout -->
-  
+    <!-- End of Layout --> 
+
+    <!-- Footer Tabs -->
+    <nav id="footerTabs" class="horizontal flex-layout">
+
+      <!-- Skills - Tab -->
+      <a id="skillsTab" class="tab" href="#skills">
+        <button class="vertical flex-layout centered" naked>
+          <span class="material-icons icon">computer</span>
+          <span class="label txt caption md-inactive">Skills</span>
+        </button>
+      </a>
+
+      <!-- Education - Tab -->
+      <a id="educationTab" class="tab" href="#education">
+        <button class="vertical flex-layout centered" naked>
+          <span class="material-icons icon">school</span>
+          <span class="label txt caption md-inactive">Education</span>
+        </button>
+      </a>
+
+      <!-- Experience Tab -->
+      <a id="experienceTab" class="tab" href="#experience">
+        <button class="vertical flex-layout centered" naked>
+          <span class="material-icons icon">work_outlined</span>
+          <span class="label txt caption md-inactive">Experience</span>
+        </button>
+      </a>
+
+      <!-- Projects Tab -->
+      <a id="projectsTab" class="tab" href="#projects">
+        <button class="vertical flex-layout centered" naked>
+          <span class="material-icons icon">description</span>
+          <span class="label txt caption md-inactive">Projects</span>
+        </button>
+      </a>
+
+    </nav>
+    <!-- End of Footer Tabs -->
+
   </body>
 
 </html>
